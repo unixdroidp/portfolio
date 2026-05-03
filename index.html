@@ -271,196 +271,68 @@ footer{position:relative;z-index:1;background:var(--bg);border-top:1px solid var
 .fu{opacity:0;transform:translateY(28px);transition:opacity .65s,transform .65s;}
 .fu.vis{opacity:1;transform:none;}
 
-/* ===== HAMBURGER MENU ===== */
-#nav-toggle{display:none;background:none;border:1px solid var(--border);border-radius:8px;color:var(--txt);padding:7px 11px;font-size:1.05rem;cursor:pointer;line-height:1;}
-
-/* ===== TABLET — 960px ===== */
+/* RESPONSIVE */
 @media(max-width:960px){
-  /* NAV */
   nav{padding:0 20px;} .n-badge{display:none;}
-  /* SECTIONS */
-  section{padding:64px 20px;}
-  #hero{padding:90px 20px 64px;flex-direction:column;gap:36px;align-items:flex-start;}
-  /* FOOTER */
+  section{padding:64px 20px;} #hero{padding:90px 20px 64px;flex-direction:column;gap:36px;align-items:flex-start;}
   footer{padding:28px 20px;flex-direction:column;text-align:center;gap:12px;} .f-links{justify-content:center;}
-  /* HERO */
   .hr{width:100%;justify-content:center;}
   .ag{grid-template-columns:1fr;gap:32px;}
-  .h-stats{gap:20px;}
-  .orbit-wrap{width:280px;height:280px;}
-  .orbit:nth-child(1){width:260px;height:260px;}
-  .orbit:nth-child(2){width:200px;height:200px;}
-  .orbit:nth-child(3){width:140px;height:140px;}
-  /* GRIDS */
   .feat-grid{grid-template-columns:1fr 1fr;}
   .srv-grid{grid-template-columns:1fr;}
   .sk-grid{grid-template-columns:1fr;}
   .ach-grid{grid-template-columns:1fr;}
   .ach-two-col{grid-template-columns:1fr!important;gap:32px;}
-  .soc-grid{grid-template-columns:1fr 1fr;}
-  /* YT */
   .yt-box{padding:28px;gap:24px;}
-  /* NEW SECTIONS */
-  .case-grid{grid-template-columns:1fr;}
-  .case-sidebar{flex-direction:row;flex-wrap:wrap;}
-  .mitre-card,.severity-card{flex:1;min-width:200px;}
-  .siem-two-col{grid-template-columns:1fr;}
-  .net-three-col{grid-template-columns:1fr 1fr;}
-  .mitre-full-grid{grid-template-columns:1fr 1fr;}
-  .tools-demo-grid{grid-template-columns:1fr 1fr;}
+  .soc-grid{grid-template-columns:1fr 1fr;}
+  .h-stats{gap:20px;}
+  .orbit-wrap{width:280px;height:280px;}
+  .orbit:nth-child(1){width:260px;height:260px;}
+  .orbit:nth-child(2){width:200px;height:200px;}
+  .orbit:nth-child(3){width:140px;height:140px;}
 }
-
-/* ===== MOBILE — 580px ===== */
 @media(max-width:580px){
-  /* NAV */
-  nav{padding:0 14px;height:60px;}
-  .nl{font-size:.85rem;}
+  nav{padding:0 16px;}
   .na{display:none;}
-  #nav-toggle{display:flex;align-items:center;justify-content:center;}
-  .na.open{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:rgba(10,10,15,.98);border-bottom:1px solid var(--border);padding:12px 16px;gap:0;backdrop-filter:blur(20px);z-index:99;max-height:calc(100vh - 60px);overflow-y:auto;}
-  .na.open a{padding:11px 14px;border-radius:8px;font-size:.8rem;border-bottom:1px solid rgba(255,255,255,.04);}
-  .na.open a:last-child{border-bottom:none;}
-
-  /* SECTIONS */
-  section{padding:48px 16px;}
-  #hero{padding:78px 16px 48px;}
+  .nl{font-size:.9rem;}
+  section{padding:52px 16px;}
+  #hero{padding:84px 16px 52px;}
   footer{padding:24px 16px;}
-
-  /* HERO */
-  .hn{font-size:clamp(1.9rem,9.5vw,3rem);letter-spacing:-0.5px;line-height:1;}
-  .h-alias{font-size:.72rem;letter-spacing:2px;}
-  .h-tag{font-size:.5rem;padding:5px 10px;}
-  .h-typed-wrap{font-size:.8rem;}
-  .hd{font-size:.86rem;line-height:1.85;}
-  .h-btns{gap:8px;flex-wrap:wrap;}
-  .btn{font-size:.7rem;padding:10px 16px;}
-  .h-stats{gap:12px;flex-wrap:wrap;}
-  .h-stat-n{font-size:1.25rem;}
-  .h-stat-l{font-size:.52rem;}
-
-  /* ORBIT — hide on very small or shrink */
-  .orbit-wrap{width:200px;height:200px;}
-  .orbit:nth-child(1){width:185px;height:185px;}
-  .orbit:nth-child(2){width:142px;height:142px;}
-  .orbit:nth-child(3){width:100px;height:100px;}
-  .orbit-center{width:80px;height:80px;}
-  .orbit-ico{font-size:1.6rem;}
-  .o-badge{font-size:.44rem;padding:4px 7px;}
-
-  /* SECTION HEADER */
-  .s-title{font-size:1.35rem;}
-  .s-title::after{display:none;}
-  .s-tag{font-size:.52rem;}
-  .sh{margin-bottom:36px;}
-
-  /* ABOUT TERMINAL */
-  .term{font-size:.6rem;}
-  .t-body{padding:14px;line-height:2;}
-  .ag{gap:20px;}
-
-  /* FEATURE CARDS */
+  .hn{font-size:clamp(2rem,10vw,3.2rem);letter-spacing:-0.5px;}
+  .h-alias{font-size:.75rem;letter-spacing:3px;}
+  .h-btns{gap:8px;}
+  .btn{font-size:.72rem;padding:10px 18px;}
+  .h-stats{gap:14px;flex-wrap:wrap;}
+  .h-stat-n{font-size:1.3rem;}
+  .orbit-wrap{width:220px;height:220px;}
+  .orbit:nth-child(1){width:200px;height:200px;}
+  .orbit:nth-child(2){width:154px;height:154px;}
+  .orbit:nth-child(3){width:108px;height:108px;}
+  .orbit-center{width:90px;height:90px;}
+  .orbit-ico{font-size:1.8rem;}
+  .o-badge{font-size:.48rem;padding:4px 8px;}
   .feat-grid{grid-template-columns:1fr;}
-  .feat-card{padding:22px 18px;}
-
-  /* SKILL CARDS */
   .sk-grid{grid-template-columns:1fr;}
-  .sk-card{padding:20px 16px;}
-
-  /* SERVICE CARDS */
   .srv-grid{grid-template-columns:1fr;}
-  .srv-card{padding:24px 18px;}
-  .srv-num{font-size:2.2rem;}
-
-  /* CERTS & ACHIEVEMENTS */
   .ach-grid{grid-template-columns:1fr;}
-  .cert-card{padding:16px 14px;gap:12px;}
-  .cert-badge{width:44px;height:44px;font-size:1.1rem;}
-  .cert-name{font-size:.82rem;}
-
-  /* STATS ROW */
-  .stats-row{grid-template-columns:repeat(2,1fr);gap:10px;}
-  .stat-box{padding:18px 12px;}
-  .stat-num{font-size:1.6rem;}
-
-  /* YT */
-  .yt-box{flex-direction:column;gap:14px;padding:18px;}
-  .yt-cards{grid-template-columns:1fr 1fr;}
-  .yt-card{padding:14px;}
-
-  /* SOCIAL */
   .soc-grid{grid-template-columns:1fr;}
-
-  /* FOOTER */
-  .f-links{gap:14px;flex-wrap:wrap;}
-  .f-copy{font-size:.5rem;}
-
-  /* ====== NEW SOC SECTIONS ====== */
-
-  /* SOC TABS — horizontal scroll */
-  .soc-tabs{flex-wrap:nowrap!important;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:8px;gap:6px!important;scrollbar-width:none;}
-  .soc-tabs::-webkit-scrollbar{display:none;}
-  .soc-tab{white-space:nowrap;flex-shrink:0;font-size:.58rem;padding:7px 12px;}
-
-  /* CASE STUDY */
-  .case-grid{grid-template-columns:1fr;gap:16px;}
-  .case-header{padding:16px 16px;}
-  .case-body{padding:16px 16px;}
-  .case-title{font-size:.92rem;}
-  .case-sidebar{flex-direction:column;gap:12px;}
-  .case-section{margin-bottom:18px;}
-  .case-section p{font-size:.82rem;}
-  .case-steps li{font-size:.8rem;}
-  .tools-row{gap:6px;}
-  .tool-badge{font-size:.55rem;padding:4px 9px;}
-  .action-row{gap:6px;}
-  .action-item{font-size:.55rem;padding:5px 9px;}
-
-  /* LOG BLOCKS — horizontal scroll */
-  .log-block{overflow-x:auto;}
-  .log-code{font-size:.62rem;padding:12px 14px;min-width:280px;}
-  .log-bar{padding:7px 12px;}
-  .log-bar span{font-size:.5rem!important;}
-
-  /* SIEM */
-  .siem-two-col{grid-template-columns:1fr;gap:20px;}
-  .siem-step{padding:12px;gap:10px;}
-  .siem-step strong{font-size:.8rem;}
-  .siem-step p{font-size:.75rem;}
-
-  /* NETWORKING */
-  .net-three-col{grid-template-columns:1fr;gap:20px;}
-  .osi-layer{padding:7px 10px;}
-  .osi-name{font-size:.7rem;}
-  .osi-ex{font-size:.5rem;}
-  .ports-table{overflow-x:auto;}
-  .port-row{font-size:.7rem;padding:7px 10px;}
-  .compare-card{padding:14px;}
-  .compare-list li{font-size:.72rem;}
-
-  /* TOOLS DEMO */
-  .tools-demo-grid{grid-template-columns:1fr;gap:16px;}
-  .tool-demo-card{padding:20px 16px;}
-  .tool-demo-icon{width:44px;height:44px;font-size:1.4rem;}
-  .tool-demo-name{font-size:.88rem;}
-  .tool-demo-badge{display:none;}
-  .tool-demo-desc{font-size:.78rem;}
-
-  /* MITRE */
-  .mitre-full-grid{grid-template-columns:1fr;gap:12px;}
-  .mitre-tactic-col{padding:16px;}
-  .mitre-tactic-header{font-size:.8rem;margin-bottom:12px;}
-  .mitre-note{padding:14px 16px;gap:12px;}
-  .mitre-note p{font-size:.82rem;}
-
-  /* BLOG */
-  .blog-grid{grid-template-columns:1fr;}
-  .bm-scroll{padding:18px 16px;}
-  .bm-title{font-size:1.1rem;}
-  .bm-box{border-radius:12px;}
-
-  /* MISC */
-  #btt{width:38px;height:38px;bottom:18px;right:18px;}
-  #cur,#cur2{display:none;}
+  .stats-row{grid-template-columns:repeat(2,1fr);}
+  .yt-box{flex-direction:column;gap:16px;padding:20px;}
+  .yt-cards{grid-template-columns:1fr 1fr;}
+  .s-title{font-size:1.4rem;}
+  .s-title::after{display:none;}
+  .term{font-size:.65rem;}
+  .ag{gap:24px;}
+  .cert-card{padding:18px 16px;}
+  .h-tag{font-size:.52rem;}
+  .hd{font-size:.88rem;}
+}
+/* Hamburger menu for mobile */
+#nav-toggle{display:none;background:none;border:1px solid var(--border);border-radius:8px;color:var(--txt);padding:7px 10px;font-size:1rem;cursor:pointer;}
+@media(max-width:580px){
+  #nav-toggle{display:flex;align-items:center;justify-content:center;}
+  .na.open{display:flex;flex-direction:column;position:fixed;top:64px;left:0;right:0;background:rgba(10,10,15,.98);border-bottom:1px solid var(--border);padding:16px 20px;gap:0;backdrop-filter:blur(16px);z-index:99;}
+  .na.open a{padding:12px 16px;border-radius:8px;font-size:.82rem;}
 }
 
 /* SECTION ALT BG */
@@ -505,85 +377,6 @@ footer{position:relative;z-index:1;background:var(--bg);border-top:1px solid var
 .stat-num{font-size:2rem;font-weight:800;background:linear-gradient(135deg,var(--p3),var(--c));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;line-height:1;}
 .stat-lbl{font-family:var(--mono);font-size:.57rem;color:var(--txt2);letter-spacing:2px;text-transform:uppercase;margin-top:6px;}
 
-/* SOC TABS */
-.soc-tab{font-family:var(--mono);font-size:.62rem;letter-spacing:1px;padding:8px 16px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--txt2);cursor:pointer;transition:all .2s;}
-.soc-tab:hover,.soc-tab.active{border-color:var(--border2);background:var(--p4);color:var(--p3);}
-.case-grid{display:grid;grid-template-columns:1fr 280px;gap:24px;align-items:start;}
-.case-main{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
-.case-header{padding:24px 28px;border-bottom:1px solid var(--border);background:rgba(255,255,255,.02);}
-.case-badge{display:inline-block;font-family:var(--mono);font-size:.52rem;letter-spacing:2px;padding:4px 10px;border-radius:4px;border:1px solid;margin-bottom:10px;}
-.case-title{font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:6px;}
-.case-meta{font-family:var(--mono);font-size:.6rem;color:var(--txt2);letter-spacing:.5px;}
-.case-body{padding:24px 28px;}
-.case-section{margin-bottom:24px;}
-.case-section:last-child{margin-bottom:0;}
-.case-section-title{font-family:var(--mono);font-size:.65rem;letter-spacing:2px;color:var(--p3);margin-bottom:10px;text-transform:uppercase;}
-.case-section p{font-size:.88rem;line-height:1.8;color:var(--txt2);font-weight:300;}
-.case-steps{padding-left:20px;}
-.case-steps li{font-size:.85rem;color:var(--txt2);line-height:1.7;margin-bottom:6px;font-weight:300;}
-.case-steps li::marker{color:var(--p3);}
-.log-block{background:#050508;border:1px solid var(--border);border-radius:10px;overflow:hidden;}
-.log-bar{background:rgba(255,255,255,.03);border-bottom:1px solid var(--border);padding:8px 14px;display:flex;align-items:center;gap:6px;}
-.log-code{padding:16px 18px;font-family:var(--mono);font-size:.68rem;color:#a3e635;line-height:1.8;overflow-x:auto;white-space:pre;}
-.tools-row{display:flex;flex-wrap:wrap;gap:8px;}
-.tool-badge{font-family:var(--mono);font-size:.6rem;padding:5px 12px;border:1px solid var(--border2);border-radius:6px;color:var(--p3);background:var(--p5);}
-.conclusion-box{border:1px solid;border-radius:10px;padding:16px 18px;}
-.conclusion-label{font-family:var(--mono);font-size:.62rem;letter-spacing:1px;font-weight:700;margin-bottom:8px;}
-.conclusion-box p{font-size:.85rem;color:var(--txt2);line-height:1.7;font-weight:300;margin:0;}
-.action-row{display:flex;flex-wrap:wrap;gap:8px;}
-.action-item{font-family:var(--mono);font-size:.6rem;padding:6px 12px;border:1px solid rgba(34,197,94,.25);border-radius:6px;color:#22c55e;background:rgba(34,197,94,.06);}
-.case-sidebar{display:flex;flex-direction:column;gap:16px;}
-.mitre-card,.severity-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px;}
-.mitre-title{font-family:var(--mono);font-size:.6rem;letter-spacing:2px;color:var(--p3);margin-bottom:14px;text-transform:uppercase;}
-.mitre-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;}
-.mitre-id{font-family:var(--mono);font-size:.58rem;color:var(--c);background:var(--c2);border:1px solid rgba(6,182,212,.2);padding:3px 7px;border-radius:4px;white-space:nowrap;flex-shrink:0;}
-.mitre-name{font-size:.78rem;color:var(--txt2);line-height:1.4;}
-.severity-bar-wrap{height:4px;background:rgba(255,255,255,.06);border-radius:4px;overflow:hidden;}
-.severity-bar{height:100%;border-radius:4px;}
-.siem-two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
-.siem-info-card{display:flex;flex-direction:column;gap:16px;}
-.siem-step{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;}
-.siem-num{font-family:var(--mono);font-size:1.1rem;font-weight:800;background:linear-gradient(135deg,var(--p3),var(--c));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;flex-shrink:0;line-height:1;}
-.siem-step strong{font-size:.85rem;color:#fff;display:block;margin-bottom:4px;}
-.siem-step p{font-size:.8rem;color:var(--txt2);line-height:1.6;font-weight:300;margin:0;}
-.net-three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;}
-.osi-stack{display:flex;flex-direction:column;gap:4px;}
-.osi-layer{display:flex;align-items:center;gap:10px;border:1px solid;border-radius:8px;padding:8px 12px;transition:all .2s;}
-.osi-layer:hover{transform:translateX(4px);}
-.osi-num{font-family:var(--mono);font-size:.7rem;font-weight:800;color:#fff;width:18px;flex-shrink:0;}
-.osi-name{font-size:.75rem;font-weight:700;color:#fff;flex:1;}
-.osi-ex{font-family:var(--mono);font-size:.55rem;color:var(--txt2);}
-.ports-table{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;}
-.port-row{display:grid;grid-template-columns:60px 50px 1fr;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.04);font-size:.75rem;}
-.port-row.header{font-family:var(--mono);font-size:.55rem;letter-spacing:1px;color:var(--p3);background:var(--p5);}
-.port-row:last-child{border-bottom:none;}
-.port-num{font-family:var(--mono);font-weight:700;color:var(--c);}
-.port-proto{font-family:var(--mono);color:var(--p3);}
-.port-use{color:var(--txt2);}
-.compare-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;}
-.compare-header{font-size:.85rem;font-weight:700;margin-bottom:10px;}
-.compare-list{padding-left:16px;}
-.compare-list li{font-size:.75rem;color:var(--txt2);line-height:1.7;font-weight:300;}
-.compare-list li::marker{color:var(--p3);}
-.tools-demo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;}
-.tool-demo-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:28px;transition:all .3s;}
-.tool-demo-card:hover{border-color:var(--border2);transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.3);}
-.tool-demo-header{display:flex;align-items:center;gap:14px;margin-bottom:4px;}
-.tool-demo-icon{font-size:1.8rem;width:52px;height:52px;display:flex;align-items:center;justify-content:center;background:var(--p4);border:1px solid var(--border2);border-radius:10px;flex-shrink:0;}
-.tool-demo-name{font-size:.95rem;font-weight:700;color:#fff;}
-.tool-demo-sub{font-family:var(--mono);font-size:.55rem;color:var(--txt2);letter-spacing:.5px;margin-top:2px;}
-.tool-demo-badge{margin-left:auto;font-family:var(--mono);font-size:.52rem;padding:4px 10px;border:1px solid;border-radius:4px;letter-spacing:1px;flex-shrink:0;}
-.tool-demo-desc{font-size:.82rem;color:var(--txt2);line-height:1.75;font-weight:300;}
-.mitre-full-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px;}
-.mitre-tactic-col{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px;}
-.mitre-tactic-header{font-size:.85rem;font-weight:700;color:#fff;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);}
-.mitre-entry{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;}
-.mitre-entry-id{font-family:var(--mono);font-size:.55rem;color:var(--c);background:var(--c2);border:1px solid rgba(6,182,212,.2);padding:3px 7px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:2px;}
-.mitre-entry-name{font-size:.78rem;color:#fff;font-weight:600;margin-bottom:2px;}
-.mitre-entry-case{font-family:var(--mono);font-size:.55rem;color:var(--p3);}
-.mitre-note{display:flex;align-items:flex-start;gap:16px;background:var(--p5);border:1px solid var(--border2);border-radius:var(--r);padding:20px 24px;}
-.mitre-note-icon{font-size:1.4rem;flex-shrink:0;}
-.mitre-note p{font-size:.88rem;color:var(--txt2);line-height:1.75;font-weight:300;margin:0;}
 /* ========== BLOG SECTION ========== */
 #blog{background:var(--bg);}
 .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px;}
@@ -604,12 +397,10 @@ footer{position:relative;z-index:1;background:var(--bg);border-top:1px solid var
 .blog-tag{font-family:var(--mono);font-size:.5rem;color:var(--txt2);border:1px solid var(--border);padding:3px 8px;border-radius:4px;}
 
 /* BLOG MODAL */
-#blog-modal{position:fixed;inset:0;z-index:9500;display:flex;align-items:flex-end;justify-content:center;padding:0;opacity:0;visibility:hidden;transition:all .3s;}
-@media(min-width:581px){#blog-modal{align-items:center;padding:20px;}}
+#blog-modal{position:fixed;inset:0;z-index:9500;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:all .3s;}
 #blog-modal.open{opacity:1;visibility:visible;}
 .bm-overlay{position:absolute;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(8px);}
-.bm-box{position:relative;z-index:1;background:var(--bg2);border:1px solid var(--border2);border-radius:16px 16px 0 0;width:100%;max-width:780px;max-height:92vh;overflow:hidden;display:flex;flex-direction:column;transform:translateY(40px);transition:transform .35s;}
-@media(min-width:581px){.bm-box{border-radius:16px;max-height:90vh;transform:translateY(30px) scale(.97);}}
+.bm-box{position:relative;z-index:1;background:var(--bg2);border:1px solid var(--border2);border-radius:16px;width:100%;max-width:780px;max-height:88vh;overflow:hidden;display:flex;flex-direction:column;transform:translateY(30px) scale(.97);transition:transform .3s;}
 #blog-modal.open .bm-box{transform:translateY(0) scale(1);}
 .bm-head{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
 .bm-cat{font-family:var(--mono);font-size:.55rem;letter-spacing:2px;color:var(--p3);background:var(--p4);border:1px solid var(--border2);padding:4px 10px;border-radius:4px;}
@@ -635,6 +426,11 @@ footer{position:relative;z-index:1;background:var(--bg);border-top:1px solid var
 .bm-cta-txt{font-size:.82rem;color:var(--txt2);}
 .blog-view-all{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.62rem;letter-spacing:2px;color:var(--p3);background:var(--p4);border:1px solid var(--border2);padding:10px 20px;border-radius:8px;text-decoration:none;transition:all .25s;margin-top:32px;}
 .blog-view-all:hover{background:var(--p);color:#fff;}
+@media(max-width:580px){
+  .blog-grid{grid-template-columns:1fr;}
+  .bm-scroll{padding:20px 18px;}
+  .bm-box{border-radius:12px;}
+}
 </style>
 </head>
 <body>
@@ -659,7 +455,6 @@ footer{position:relative;z-index:1;background:var(--bg);border-top:1px solid var
     <li><a href="#skills">Skills</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#blog">Blog</a></li>
-    <li><a href="#soc-portfolio">SOC Lab</a></li>
     <li><a href="#achievements">Achievements</a></li>
     <li><a href="#youtube">YouTube</a></li>
     <li><a href="#connect">Connect</a></li>
@@ -810,7 +605,7 @@ footer{position:relative;z-index:1;background:var(--bg);border-top:1px solid var
     <div class="sk-card fu" data-sk="89"><div class="sk-top"><div class="sk-ico">🛡️</div><div class="sk-name">Ethical Hacking</div></div><div class="sk-bar-wrap"><div class="sk-bar"></div></div><div class="sk-tags"><span class="tag">Kali Linux</span><span class="tag">Metasploit</span><span class="tag">Burp Suite</span><span class="tag">OSINT</span><span class="tag">Social Engineering</span></div></div>
     <div class="sk-card fu" data-sk="85"><div class="sk-top"><div class="sk-ico">📈</div><div class="sk-name">Digital Marketing</div></div><div class="sk-bar-wrap"><div class="sk-bar"></div></div><div class="sk-tags"><span class="tag">SEO & SEM</span><span class="tag">Google Ads</span><span class="tag">Meta Ads</span><span class="tag">Branding</span><span class="tag">Lead Gen</span></div></div>
     <div class="sk-card fu" data-sk="80"><div class="sk-top"><div class="sk-ico">💻</div><div class="sk-name">Web Development</div></div><div class="sk-bar-wrap"><div class="sk-bar"></div></div><div class="sk-tags"><span class="tag">HTML/CSS/JS</span><span class="tag">Webflow</span><span class="tag">Responsive</span><span class="tag">UI/UX</span></div></div>
-    <div class="sk-card fu" data-sk="87"><div class="sk-top"><div class="sk-ico">🎯</div><div class="sk-name">Cyber Analysis & SOC</div></div><div class="sk-bar-wrap"><div class="sk-bar"></div></div><div class="sk-tags"><span class="tag">SIEM</span><span class="tag">Log Analysis</span><span class="tag">Incident Response</span><span class="tag">Threat Detection</span><span class="tag">Windows Event Logs</span><span class="tag">Network Security</span><span class="tag">Phishing Analysis</span></div></div>
+    <div class="sk-card fu" data-sk="87"><div class="sk-top"><div class="sk-ico">🎯</div><div class="sk-name">Cyber Analysis & SOC</div></div><div class="sk-bar-wrap"><div class="sk-bar"></div></div><div class="sk-tags"><span class="tag">SOC L1 Analyst</span><span class="tag">Risk Assessment</span><span class="tag">Incident Response</span><span class="tag">SIEM Tools</span><span class="tag">Threat Hunting</span></div></div>
     <div class="sk-card fu" data-sk="82"><div class="sk-top"><div class="sk-ico">🚀</div><div class="sk-name">Business Strategy</div></div><div class="sk-bar-wrap"><div class="sk-bar"></div></div><div class="sk-tags"><span class="tag">Startup Growth</span><span class="tag">Client Management</span><span class="tag">Leadership</span></div></div>
   </div>
 </section>
@@ -968,724 +763,6 @@ footer{position:relative;z-index:1;background:var(--bg);border-top:1px solid var
   </div>
 </div>
 
-<!-- SOC INVESTIGATION PORTFOLIO -->
-<section id="soc-portfolio" aria-label="SOC Investigation Projects" style="background:var(--bg3);">
-  <div class="sh fu">
-    <div class="s-tag">Real Case Studies</div>
-    <h2 class="s-title">SOC <span class="a">Investigation Projects</span></h2>
-  </div>
-  <p style="font-size:.94rem;color:var(--txt2);margin-bottom:40px;max-width:640px;line-height:1.8;font-weight:300;" class="fu">Real-world SOC investigations conducted in lab environments — demonstrating log analysis, threat detection, and incident response capabilities that recruiters want to see.</p>
-
-  <!-- Case Study Tabs -->
-  <div class="soc-tabs fu" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px;">
-    <button class="soc-tab active" onclick="showCase('phishing')" data-case="phishing">🎣 Phishing Attack</button>
-    <button class="soc-tab" onclick="showCase('bruteforce')" data-case="bruteforce">🔨 Brute Force (4625)</button>
-    <button class="soc-tab" onclick="showCase('login')" data-case="login">✅ Login Tracking (4624)</button>
-    <button class="soc-tab" onclick="showCase('malware')" data-case="malware">🦠 Malware Detection</button>
-    <button class="soc-tab" onclick="showCase('network')" data-case="network">🌐 Suspicious Traffic</button>
-  </div>
-
-  <!-- Case Study Cards -->
-  <div id="case-phishing" class="case-panel">
-    <div class="case-grid">
-      <div class="case-main">
-        <div class="case-header">
-          <div class="case-badge" style="background:rgba(239,68,68,.12);border-color:rgba(239,68,68,.3);color:#ef4444;">🎣 PHISHING</div>
-          <div class="case-title">Phishing Email — Credential Harvesting Attack</div>
-          <div class="case-meta">Tool: Email Header Analyzer + Browser Sandbox · Finding: Credential Harvesting</div>
-        </div>
-        <div class="case-body">
-          <div class="case-section">
-            <div class="case-section-title">📋 Scenario</div>
-            <p>A user reported receiving a suspicious email claiming to be from the IT department asking them to reset their password via a link. The link directed to a fake login page mimicking the company's VPN portal.</p>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">📄 Sample Log / Evidence</div>
-            <div class="log-block">
-              <div class="log-bar"><span class="td r"></span><span class="td y"></span><span class="td g"></span><span style="font-size:.55rem;color:var(--txt2);margin-left:auto;letter-spacing:2px;">EMAIL HEADER ANALYSIS</span></div>
-              <pre class="log-code">From: IT-Support &lt;it-support@comp4ny-helpdesk.ru&gt;
-Reply-To: phish@malicious-domain.xyz
-X-Originating-IP: 185.220.101.47  [TOR Exit Node]
-Received: from smtp.mailgun-spoof.net
-Subject: [URGENT] Password Reset Required — Action Needed
-Link URL: http://corp-vpn-reset.xyz/login?id=U2Vj...
-MX Record: mailgun-spoof.net → NOT company domain
-SPF Check: FAIL
-DKIM Check: FAIL  
-DMARC Check: FAIL</pre>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🔧 Tools Used</div>
-            <div class="tools-row">
-              <span class="tool-badge">📧 Email Header Analyzer</span>
-              <span class="tool-badge">🌐 Browser Sandbox (Any.run)</span>
-              <span class="tool-badge">🔍 VirusTotal</span>
-              <span class="tool-badge">🛡️ WHOIS Lookup</span>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🔍 Analysis Steps</div>
-            <ol class="case-steps">
-              <li>Extracted email headers using MXToolbox — identified spoofed sender domain</li>
-              <li>Checked SPF/DKIM/DMARC records — all 3 failed (clear phishing indicator)</li>
-              <li>Ran link through VirusTotal — flagged by 23/87 engines as malicious</li>
-              <li>Opened URL in sandboxed browser — revealed credential harvesting login page</li>
-              <li>Traced originating IP to TOR exit node (185.220.101.47)</li>
-              <li>Cross-referenced domain registration — created 2 days before attack</li>
-            </ol>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">✅ Final Conclusion</div>
-            <div class="conclusion-box" style="border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.06);">
-              <div class="conclusion-label" style="color:#ef4444;">⚠️ CONFIRMED PHISHING — Credential Harvesting Attack</div>
-              <p>Attacker used a lookalike domain with spoofed IT branding to steal VPN credentials. Domain registered 48 hours before the attack — classic sign of a purpose-built phishing campaign.</p>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🚨 Action Taken</div>
-            <div class="action-row">
-              <span class="action-item">🚫 Domain blocked at firewall level</span>
-              <span class="action-item">🔑 Affected user password reset</span>
-              <span class="action-item">📢 Security awareness alert sent</span>
-              <span class="action-item">📋 Incident ticket raised (P1)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="case-sidebar">
-        <div class="mitre-card">
-          <div class="mitre-title">🎯 MITRE ATT&CK Mapping</div>
-          <div class="mitre-item"><span class="mitre-id">T1566.001</span><span class="mitre-name">Spearphishing Attachment</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1566.002</span><span class="mitre-name">Spearphishing Link</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1598</span><span class="mitre-name">Phishing for Information</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1539</span><span class="mitre-name">Steal Web Session Cookie</span></div>
-        </div>
-        <div class="severity-card">
-          <div class="mitre-title">⚡ Severity</div>
-          <div class="severity-bar-wrap"><div class="severity-bar" style="width:85%;background:linear-gradient(to right,#f59e0b,#ef4444);"></div></div>
-          <div style="font-family:var(--mono);font-size:.6rem;color:#ef4444;margin-top:6px;">HIGH — Immediate Action Required</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="case-bruteforce" class="case-panel" style="display:none;">
-    <div class="case-grid">
-      <div class="case-main">
-        <div class="case-header">
-          <div class="case-badge" style="background:rgba(249,115,22,.12);border-color:rgba(249,115,22,.3);color:#f97316;">🔨 BRUTE FORCE</div>
-          <div class="case-title">Brute Force Login Attempt — Event ID 4625</div>
-          <div class="case-meta">Tool: Windows Event Viewer + Splunk · Finding: Automated Password Attack</div>
-        </div>
-        <div class="case-body">
-          <div class="case-section">
-            <div class="case-section-title">📋 Scenario</div>
-            <p>SIEM alert triggered for 500+ failed login attempts (Event ID 4625) against a domain admin account within 3 minutes. Source IP was external, suggesting automated brute force attack targeting RDP (port 3389).</p>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">📄 Windows Event Log Sample</div>
-            <div class="log-block">
-              <div class="log-bar"><span class="td r"></span><span class="td y"></span><span class="td g"></span><span style="font-size:.55rem;color:var(--txt2);margin-left:auto;letter-spacing:2px;">EVENT VIEWER — SECURITY LOG</span></div>
-              <pre class="log-code">Log Name:    Security
-Source:      Microsoft-Windows-Security-Auditing
-Event ID:    4625 — An account failed to log on
-Level:       Information
-Date:        2026-04-15 02:17:43
-
-Account Name: Administrator
-Account Domain: CORP-DOMAIN
-Logon Type:  10 (RemoteInteractive / RDP)
-Failure Reason: Unknown user name or bad password
-Source IP:   91.108.4.43 [Russia — ASN: AS62041]
-Workstation: DESKTOP-TARGET01
-
-[Count: 547 events in 3 minutes — 14:17:40 to 14:20:33]
-[Pattern: Sequential, ~0.33s interval → Automated Tool]</pre>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">📊 Splunk SPL Query Used</div>
-            <div class="log-block">
-              <div class="log-bar"><span class="td r"></span><span class="td y"></span><span class="td g"></span><span style="font-size:.55rem;color:var(--txt2);margin-left:auto;letter-spacing:2px;">SPLUNK — SPL QUERY</span></div>
-              <pre class="log-code">index=windows_logs EventCode=4625
-| stats count by src_ip, user, _time
-| where count > 50
-| sort -count
-| eval threat_level=if(count>100,"CRITICAL","HIGH")</pre>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🔧 Tools Used</div>
-            <div class="tools-row">
-              <span class="tool-badge">🖥️ Windows Event Viewer</span>
-              <span class="tool-badge">📊 Splunk SIEM</span>
-              <span class="tool-badge">🌍 AbuseIPDB</span>
-              <span class="tool-badge">🔥 Windows Firewall</span>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🔍 Analysis Steps</div>
-            <ol class="case-steps">
-              <li>Splunk alert triggered — threshold: >50 Event ID 4625 in 5 min window</li>
-              <li>Filtered logs by source IP: 91.108.4.43 — 547 failures from single source</li>
-              <li>Verified Logon Type = 10 (RDP) — remote attack confirmed</li>
-              <li>Checked AbuseIPDB — IP reported 312 times for brute force activity</li>
-              <li>Reviewed successful logins (4624) after brute force window — none found</li>
-              <li>Checked account lockout policy — administrator account NOT locked (misconfiguration)</li>
-            </ol>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">✅ Final Conclusion</div>
-            <div class="conclusion-box" style="border-color:rgba(249,115,22,.3);background:rgba(249,115,22,.06);">
-              <div class="conclusion-label" style="color:#f97316;">⚠️ AUTOMATED BRUTE FORCE ATTACK — RDP Targeted</div>
-              <p>Automated credential stuffing tool (likely Hydra or Medusa) targeted the RDP service. Attack unsuccessful due to complex password policy, but account lockout policy gap identified.</p>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🚨 Action Taken</div>
-            <div class="action-row">
-              <span class="action-item">🚫 IP blocked via firewall rule</span>
-              <span class="action-item">🔒 RDP restricted to VPN only</span>
-              <span class="action-item">🔐 Account lockout policy enforced</span>
-              <span class="action-item">📋 Geo-blocking enabled (Russia/CN)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="case-sidebar">
-        <div class="mitre-card">
-          <div class="mitre-title">🎯 MITRE ATT&CK Mapping</div>
-          <div class="mitre-item"><span class="mitre-id">T1110.001</span><span class="mitre-name">Password Guessing</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1110.003</span><span class="mitre-name">Password Spraying</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1021.001</span><span class="mitre-name">Remote Desktop Protocol</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1078</span><span class="mitre-name">Valid Accounts</span></div>
-        </div>
-        <div class="severity-card">
-          <div class="mitre-title">⚡ Severity</div>
-          <div class="severity-bar-wrap"><div class="severity-bar" style="width:90%;background:linear-gradient(to right,#f97316,#ef4444);"></div></div>
-          <div style="font-family:var(--mono);font-size:.6rem;color:#ef4444;margin-top:6px;">CRITICAL — Active Attack</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="case-login" class="case-panel" style="display:none;">
-    <div class="case-grid">
-      <div class="case-main">
-        <div class="case-header">
-          <div class="case-badge" style="background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.3);color:#22c55e;">✅ LOGIN TRACKING</div>
-          <div class="case-title">Successful Login Analysis — Event ID 4624</div>
-          <div class="case-meta">Tool: Windows Event Viewer + Splunk · Finding: Suspicious After-Hours Login</div>
-        </div>
-        <div class="case-body">
-          <div class="case-section">
-            <div class="case-section-title">📋 Scenario</div>
-            <p>Monitoring routine revealed a successful admin login (Event ID 4624) at 3:22 AM on a Saturday — outside normal working hours. The login came from an unfamiliar IP not in the employee's usual location.</p>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">📄 Windows Event Log Sample</div>
-            <div class="log-block">
-              <div class="log-bar"><span class="td r"></span><span class="td y"></span><span class="td g"></span><span style="font-size:.55rem;color:var(--txt2);margin-left:auto;letter-spacing:2px;">EVENT VIEWER — EVENT ID 4624</span></div>
-              <pre class="log-code">Log Name:    Security
-Event ID:    4624 — An account was successfully logged on
-Date:        2026-04-19 03:22:14 (Saturday)
-
-Account Name:  john.admin
-Account Domain: CORP-DOMAIN
-Logon Type:  3 (Network)
-Source IP:   103.21.244.0 [Dubai, UAE]
-Process:     NtLmSsp (NTLM Authentication used!)
-
-[!] Anomaly: Employee john.admin works 9AM–6PM IST
-[!] Anomaly: Last known IP was 192.168.1.x (office)
-[!] Anomaly: NTLM used instead of Kerberos (possible pass-the-hash)</pre>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">📊 Splunk Correlation Query</div>
-            <div class="log-block">
-              <div class="log-bar"><span class="td r"></span><span class="td y"></span><span class="td g"></span><span style="font-size:.55rem;color:var(--txt2);margin-left:auto;letter-spacing:2px;">SPLUNK SPL</span></div>
-              <pre class="log-code">index=windows_logs EventCode=4624
-| eval hour=strftime(_time, "%H"), day=strftime(_time,"%A")
-| where hour < 6 OR hour > 22
-| where day="Saturday" OR day="Sunday"
-| table _time, user, src_ip, LogonType
-| sort -_time</pre>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🔧 Tools Used</div>
-            <div class="tools-row">
-              <span class="tool-badge">🖥️ Windows Event Viewer</span>
-              <span class="tool-badge">📊 Splunk SIEM</span>
-              <span class="tool-badge">🌍 IP Geolocation</span>
-              <span class="tool-badge">📞 User Verification</span>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🔍 Analysis Steps</div>
-            <ol class="case-steps">
-              <li>Splunk after-hours login alert triggered for Event 4624 at 3:22 AM</li>
-              <li>Source IP geolocated to Dubai — employee lives in Bangalore</li>
-              <li>Logon Type 3 with NTLM auth flagged — Kerberos is standard in domain</li>
-              <li>Called employee — confirmed NOT their login (account compromised)</li>
-              <li>Reviewed post-login activity — accessed HR shared drive (data exfil risk)</li>
-              <li>Correlated with recent phishing incident — credentials stolen 3 days prior</li>
-            </ol>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">✅ Final Conclusion</div>
-            <div class="conclusion-box" style="border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.06);">
-              <div class="conclusion-label" style="color:#ef4444;">🔴 CONFIRMED ACCOUNT COMPROMISE — Possible Data Exfiltration</div>
-              <p>Attacker used credentials stolen in prior phishing attack to log in remotely. NTLM usage suggests possible pass-the-hash technique. HR data accessed — DLP investigation initiated.</p>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🚨 Action Taken</div>
-            <div class="action-row">
-              <span class="action-item">🔑 Account disabled immediately</span>
-              <span class="action-item">🔐 All sessions terminated</span>
-              <span class="action-item">🔍 DLP audit on accessed files</span>
-              <span class="action-item">📋 P1 Incident raised + escalated to L2</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="case-sidebar">
-        <div class="mitre-card">
-          <div class="mitre-title">🎯 MITRE ATT&CK Mapping</div>
-          <div class="mitre-item"><span class="mitre-id">T1078</span><span class="mitre-name">Valid Accounts</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1550.002</span><span class="mitre-name">Pass the Hash</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1021.002</span><span class="mitre-name">SMB/Windows Admin Shares</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1530</span><span class="mitre-name">Data from Cloud Storage</span></div>
-        </div>
-        <div class="severity-card">
-          <div class="mitre-title">⚡ Severity</div>
-          <div class="severity-bar-wrap"><div class="severity-bar" style="width:95%;background:linear-gradient(to right,#ef4444,#dc2626);"></div></div>
-          <div style="font-family:var(--mono);font-size:.6rem;color:#ef4444;margin-top:6px;">CRITICAL — Active Breach</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="case-malware" class="case-panel" style="display:none;">
-    <div class="case-grid">
-      <div class="case-main">
-        <div class="case-header">
-          <div class="case-badge" style="background:rgba(124,58,237,.2);border-color:var(--border2);color:var(--p3);">🦠 MALWARE</div>
-          <div class="case-title">Malware Detection via Log Analysis</div>
-          <div class="case-meta">Tool: Splunk + VirusTotal + Process Monitor · Finding: Trojan Dropper</div>
-        </div>
-        <div class="case-body">
-          <div class="case-section">
-            <div class="case-section-title">📋 Scenario</div>
-            <p>Endpoint security alert triggered for a new process spawned by winword.exe. Process created a .bat file in AppData\Temp and established outbound connection to an unknown C2 server — classic macro-enabled malware behavior.</p>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">📄 Log Evidence</div>
-            <div class="log-block">
-              <div class="log-bar"><span class="td r"></span><span class="td y"></span><span class="td g"></span><span style="font-size:.55rem;color:var(--txt2);margin-left:auto;letter-spacing:2px;">PROCESS + NETWORK LOGS</span></div>
-              <pre class="log-code">[PROCESS CREATION — Event 4688]
-ParentProcess: WINWORD.EXE (PID 2284)
-NewProcess: cmd.exe → powershell.exe (suspicious!)
-CommandLine: powershell -exec bypass -enc JABzAD0ATgBlAHc...
-Timestamp: 2026-04-20 11:43:02
-
-[FILE CREATED]
-Path: C:\Users\victim\AppData\Roaming\Temp\svch0st.bat
-Action: Write (mimicking svchost — typosquat!)
-
-[NETWORK — Outbound C2]
-Destination: 185.234.219.44:4444 (Metasploit default port!)
-Protocol: TCP — Established
-DNS Query: evil-c2.duckdns.org → 185.234.219.44
-
-[VIRUSTOTAL RESULT]
-svch0st.bat → 41/72 engines detected → Trojan.GenericKD</pre>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🔧 Tools Used</div>
-            <div class="tools-row">
-              <span class="tool-badge">📊 Splunk SIEM</span>
-              <span class="tool-badge">🔬 VirusTotal</span>
-              <span class="tool-badge">🖥️ Process Monitor</span>
-              <span class="tool-badge">🌐 Wireshark</span>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">✅ Final Conclusion</div>
-            <div class="conclusion-box" style="border-color:rgba(124,58,237,.4);background:var(--p5);">
-              <div class="conclusion-label" style="color:var(--p3);">🦠 MACRO-ENABLED MALWARE — Trojan Dropper with C2 Beacon</div>
-              <p>Word document with malicious macro spawned PowerShell, dropped a trojan, and beaconed to C2 server at 185.234.219.44. Port 4444 suggests Metasploit Meterpreter listener.</p>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🚨 Action Taken</div>
-            <div class="action-row">
-              <span class="action-item">🔌 Machine isolated from network</span>
-              <span class="action-item">🚫 C2 IP/domain blocked</span>
-              <span class="action-item">🧹 Full disk scan + remediation</span>
-              <span class="action-item">📋 Macros disabled via GPO</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="case-sidebar">
-        <div class="mitre-card">
-          <div class="mitre-title">🎯 MITRE ATT&CK Mapping</div>
-          <div class="mitre-item"><span class="mitre-id">T1204.002</span><span class="mitre-name">Malicious File Execution</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1059.001</span><span class="mitre-name">PowerShell</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1105</span><span class="mitre-name">Ingress Tool Transfer</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1071.001</span><span class="mitre-name">Web Protocols (C2)</span></div>
-        </div>
-        <div class="severity-card">
-          <div class="mitre-title">⚡ Severity</div>
-          <div class="severity-bar-wrap"><div class="severity-bar" style="width:88%;background:linear-gradient(to right,var(--p),#ef4444);"></div></div>
-          <div style="font-family:var(--mono);font-size:.6rem;color:#ef4444;margin-top:6px;">CRITICAL — Active Compromise</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="case-network" class="case-panel" style="display:none;">
-    <div class="case-grid">
-      <div class="case-main">
-        <div class="case-header">
-          <div class="case-badge" style="background:rgba(6,182,212,.1);border-color:rgba(6,182,212,.3);color:var(--c);">🌐 NETWORK</div>
-          <div class="case-title">Suspicious Network Traffic — Data Exfiltration Attempt</div>
-          <div class="case-meta">Tool: Wireshark + Nmap + Splunk · Finding: DNS Tunneling / Exfil</div>
-        </div>
-        <div class="case-body">
-          <div class="case-section">
-            <div class="case-section-title">📋 Scenario</div>
-            <p>Network monitoring detected abnormally large DNS query traffic from a single endpoint — 8MB of outbound DNS traffic in 30 minutes (normal is ~50KB/hr). Wireshark analysis confirmed DNS tunneling being used to exfiltrate data.</p>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">📄 Wireshark + Nmap Evidence</div>
-            <div class="log-block">
-              <div class="log-bar"><span class="td r"></span><span class="td y"></span><span class="td g"></span><span style="font-size:.55rem;color:var(--txt2);margin-left:auto;letter-spacing:2px;">WIRESHARK CAPTURE</span></div>
-              <pre class="log-code">[WIRESHARK — Suspicious DNS]
-Source:  192.168.10.55 → DNS Server
-Query:   aGVsbG8td29ybGQ.evil-tunnel.xyz (Base64 in subdomain!)
-Query:   dGhpcyBpcyBleGZpbA.evil-tunnel.xyz
-Response: TXT "RECEIVED_ACK_1024"
-Volume:  8.3 MB DNS traffic in 28 minutes
-
-[NMAP SCAN RESULT]
-Target: 192.168.10.55
-Open Ports: 22(SSH), 80(HTTP), 53(DNS-unusual for endpoint!)
-Service: dnscat2 (DNS C2 tool detected!)
-
-[ANOMALY FLAGS]
-- DNS queries 150x above baseline
-- Subdomain labels contain Base64 encoded data
-- Outbound to unregistered TLD: .evil-tunnel.xyz</pre>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🔧 Tools Used</div>
-            <div class="tools-row">
-              <span class="tool-badge">🦈 Wireshark</span>
-              <span class="tool-badge">🗺️ Nmap</span>
-              <span class="tool-badge">📊 Splunk</span>
-              <span class="tool-badge">🔍 DNS Analytics</span>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">✅ Final Conclusion</div>
-            <div class="conclusion-box" style="border-color:rgba(6,182,212,.3);background:rgba(6,182,212,.05);">
-              <div class="conclusion-label" style="color:var(--c);">📤 DNS TUNNELING DETECTED — Active Data Exfiltration</div>
-              <p>Attacker used dnscat2 tool to encode and exfiltrate sensitive data via DNS TXT queries to an attacker-controlled DNS server. Classic covert channel technique to bypass DLP and firewall rules.</p>
-            </div>
-          </div>
-          <div class="case-section">
-            <div class="case-section-title">🚨 Action Taken</div>
-            <div class="action-row">
-              <span class="action-item">🔌 Endpoint isolated</span>
-              <span class="action-item">🚫 DNS queries to external IPs blocked</span>
-              <span class="action-item">📊 DNS monitoring rules added to SIEM</span>
-              <span class="action-item">🔍 Data exfil impact assessment</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="case-sidebar">
-        <div class="mitre-card">
-          <div class="mitre-title">🎯 MITRE ATT&CK Mapping</div>
-          <div class="mitre-item"><span class="mitre-id">T1048.003</span><span class="mitre-name">Exfiltration Over DNS</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1071.004</span><span class="mitre-name">DNS Application Layer</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1572</span><span class="mitre-name">Protocol Tunneling</span></div>
-          <div class="mitre-item"><span class="mitre-id">T1041</span><span class="mitre-name">Exfiltration Over C2</span></div>
-        </div>
-        <div class="severity-card">
-          <div class="mitre-title">⚡ Severity</div>
-          <div class="severity-bar-wrap"><div class="severity-bar" style="width:92%;background:linear-gradient(to right,var(--c),#ef4444);"></div></div>
-          <div style="font-family:var(--mono);font-size:.6rem;color:#ef4444;margin-top:6px;">CRITICAL — Data Breach</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SIEM / LOG ANALYSIS -->
-<section id="siem-lab" aria-label="SIEM and Log Analysis" style="background:var(--bg2);">
-  <div class="sh fu">
-    <div class="s-tag">Proof of Skill</div>
-    <h2 class="s-title">SIEM / <span class="a">Log Analysis</span></h2>
-  </div>
-  <p style="font-size:.94rem;color:var(--txt2);margin-bottom:40px;max-width:640px;line-height:1.8;font-weight:300;" class="fu">Recruiters want to see that you understand logs — not just theory. Here are real Splunk queries, log filtering examples, and dashboard setups I use for SOC monitoring.</p>
-
-  <div class="siem-two-col">
-    <div class="fu">
-      <div class="ach-title">Splunk Dashboard Setup</div>
-      <div class="siem-info-card">
-        <div class="siem-step"><span class="siem-num">01</span><div><strong>Installation</strong><p>Splunk Free (500MB/day) installed on Ubuntu VM via .deb package. Forwarder configured on Windows endpoint to ship logs to indexer.</p></div></div>
-        <div class="siem-step"><span class="siem-num">02</span><div><strong>Data Inputs</strong><p>Windows Security Event Logs, Sysmon, and network flow data ingested. Index: windows_logs created for structured querying.</p></div></div>
-        <div class="siem-step"><span class="siem-num">03</span><div><strong>Dashboard Panels</strong><p>Custom SOC dashboard built with panels for: Failed Logins (4625), Account Lockouts (4740), Process Creation (4688), and Network Anomalies.</p></div></div>
-      </div>
-    </div>
-    <div class="fu">
-      <div class="ach-title">Key SPL Queries</div>
-      <div class="log-block" style="margin-bottom:16px;">
-        <div class="log-bar"><span style="font-size:.55rem;color:var(--p3);letter-spacing:2px;">FAILED LOGINS — BRUTE FORCE DETECT</span></div>
-        <pre class="log-code">index=windows_logs EventCode=4625
-| stats count by src_ip, user
-| where count > 10
-| sort -count</pre>
-      </div>
-      <div class="log-block" style="margin-bottom:16px;">
-        <div class="log-bar"><span style="font-size:.55rem;color:var(--p3);letter-spacing:2px;">AFTER-HOURS LOGIN DETECTION</span></div>
-        <pre class="log-code">index=windows_logs EventCode=4624
-| eval hr=strftime(_time,"%H")
-| where hr<8 OR hr>20
-| table _time,user,src_ip,LogonType</pre>
-      </div>
-      <div class="log-block">
-        <div class="log-bar"><span style="font-size:.55rem;color:var(--p3);letter-spacing:2px;">MALWARE — SUSPICIOUS POWERSHELL</span></div>
-        <pre class="log-code">index=windows_logs EventCode=4688
-| where match(CommandLine,"(?i)(bypass|encodedcommand|-enc|-w hidden)")
-| table _time,ParentProcessName,CommandLine</pre>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- NETWORKING FUNDAMENTALS -->
-<section id="networking" aria-label="Networking Fundamentals" style="background:var(--bg);">
-  <div class="sh fu">
-    <div class="s-tag">SOC Foundation</div>
-    <h2 class="s-title">Networking <span class="a">Fundamentals</span></h2>
-  </div>
-  <p style="font-size:.94rem;color:var(--txt2);margin-bottom:40px;max-width:640px;line-height:1.8;font-weight:300;" class="fu">Networking is the backbone of SOC work. You can't investigate what you don't understand. Here are the core concepts every SOC analyst must know.</p>
-
-  <div class="net-three-col">
-    <!-- OSI Model -->
-    <div class="fu">
-      <div class="ach-title">OSI Model</div>
-      <div class="osi-stack">
-        <div class="osi-layer" style="background:rgba(239,68,68,.1);border-color:rgba(239,68,68,.3);"><span class="osi-num">7</span><span class="osi-name">Application</span><span class="osi-ex">HTTP, FTP, DNS, SMTP</span></div>
-        <div class="osi-layer" style="background:rgba(249,115,22,.1);border-color:rgba(249,115,22,.3);"><span class="osi-num">6</span><span class="osi-name">Presentation</span><span class="osi-ex">SSL/TLS, Encryption</span></div>
-        <div class="osi-layer" style="background:rgba(234,179,8,.1);border-color:rgba(234,179,8,.3);"><span class="osi-num">5</span><span class="osi-name">Session</span><span class="osi-ex">NetBIOS, RPC</span></div>
-        <div class="osi-layer" style="background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.3);"><span class="osi-num">4</span><span class="osi-name">Transport</span><span class="osi-ex">TCP, UDP, Port Numbers</span></div>
-        <div class="osi-layer" style="background:rgba(6,182,212,.1);border-color:rgba(6,182,212,.3);"><span class="osi-num">3</span><span class="osi-name">Network</span><span class="osi-ex">IP, ICMP, Routing</span></div>
-        <div class="osi-layer" style="background:rgba(99,102,241,.1);border-color:rgba(99,102,241,.3);"><span class="osi-num">2</span><span class="osi-name">Data Link</span><span class="osi-ex">MAC Address, Ethernet</span></div>
-        <div class="osi-layer" style="background:rgba(124,58,237,.15);border-color:var(--border2);"><span class="osi-num">1</span><span class="osi-name">Physical</span><span class="osi-ex">Cables, Bits, Hardware</span></div>
-      </div>
-    </div>
-
-    <!-- Common Ports -->
-    <div class="fu">
-      <div class="ach-title">Common Ports</div>
-      <div class="ports-table">
-        <div class="port-row header"><span>Port</span><span>Protocol</span><span>Use</span></div>
-        <div class="port-row"><span class="port-num">21</span><span class="port-proto">TCP</span><span class="port-use">FTP — File Transfer</span></div>
-        <div class="port-row"><span class="port-num">22</span><span class="port-proto">TCP</span><span class="port-use">SSH — Secure Shell</span></div>
-        <div class="port-row"><span class="port-num">23</span><span class="port-proto">TCP</span><span class="port-use">Telnet (Insecure!)</span></div>
-        <div class="port-row"><span class="port-num">25</span><span class="port-proto">TCP</span><span class="port-use">SMTP — Email Send</span></div>
-        <div class="port-row"><span class="port-num">53</span><span class="port-proto">UDP</span><span class="port-use">DNS — Name Resolution</span></div>
-        <div class="port-row"><span class="port-num">80</span><span class="port-proto">TCP</span><span class="port-use">HTTP — Web (Unencrypted)</span></div>
-        <div class="port-row"><span class="port-num">443</span><span class="port-proto">TCP</span><span class="port-use">HTTPS — Secure Web</span></div>
-        <div class="port-row"><span class="port-num">445</span><span class="port-proto">TCP</span><span class="port-use">SMB — File Sharing</span></div>
-        <div class="port-row"><span class="port-num">3389</span><span class="port-proto">TCP</span><span class="port-use">RDP — Remote Desktop</span></div>
-        <div class="port-row"><span class="port-num">8080</span><span class="port-proto">TCP</span><span class="port-use">HTTP Proxy / Alt Web</span></div>
-      </div>
-    </div>
-
-    <!-- TCP vs UDP -->
-    <div class="fu">
-      <div class="ach-title">TCP vs UDP</div>
-      <div class="compare-card" style="margin-bottom:12px;">
-        <div class="compare-header" style="color:#22c55e;">🔒 TCP — Reliable</div>
-        <ul class="compare-list">
-          <li>3-Way Handshake (SYN → SYN-ACK → ACK)</li>
-          <li>Guaranteed delivery + ordering</li>
-          <li>Slower but reliable</li>
-          <li>Used by: HTTP, HTTPS, SSH, FTP, RDP</li>
-          <li>SOC Note: Abnormal SYN floods = DoS attack</li>
-        </ul>
-      </div>
-      <div class="compare-card">
-        <div class="compare-header" style="color:#f97316;">⚡ UDP — Fast</div>
-        <ul class="compare-list">
-          <li>No handshake — fire and forget</li>
-          <li>No guarantee of delivery</li>
-          <li>Faster, lower overhead</li>
-          <li>Used by: DNS, VoIP, Streaming, DHCP</li>
-          <li>SOC Note: DNS tunneling exploits UDP 53</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TOOLS DEMONSTRATION -->
-<section id="tools-demo" aria-label="Tools Demonstration" style="background:var(--bg3);">
-  <div class="sh fu">
-    <div class="s-tag">Proof of Usage</div>
-    <h2 class="s-title">Tools <span class="a">Demonstration</span></h2>
-  </div>
-  <p style="font-size:.94rem;color:var(--txt2);margin-bottom:40px;max-width:640px;line-height:1.8;font-weight:300;" class="fu">Names aren't enough — here's actual use evidence for each tool used in SOC investigations and penetration testing scenarios.</p>
-
-  <div class="tools-demo-grid">
-    <div class="tool-demo-card fu">
-      <div class="tool-demo-header">
-        <div class="tool-demo-icon">🦈</div>
-        <div>
-          <div class="tool-demo-name">Wireshark</div>
-          <div class="tool-demo-sub">Packet Capture & Analysis</div>
-        </div>
-        <div class="tool-demo-badge" style="color:#06b6d4;border-color:rgba(6,182,212,.3);">NETWORK</div>
-      </div>
-      <div class="log-block" style="margin:16px 0;">
-        <div class="log-bar"><span style="font-size:.52rem;color:var(--txt2);letter-spacing:2px;">WIRESHARK DISPLAY FILTER — DNS TUNNEL DETECT</span></div>
-        <pre class="log-code">dns.qry.name.len > 50 and dns.qry.type == 16
-// Filter: DNS TXT queries with long subdomains (tunneling indicator)
-
-tcp.flags.syn==1 and tcp.flags.ack==0
-// Filter: All SYN packets — detect SYN flood / port scan</pre>
-      </div>
-      <p class="tool-demo-desc">Used for packet-level analysis of DNS tunneling, suspicious C2 traffic, and protocol anomalies. Identified dnscat2 tunneling via abnormal TXT query patterns.</p>
-    </div>
-
-    <div class="tool-demo-card fu">
-      <div class="tool-demo-header">
-        <div class="tool-demo-icon">🗺️</div>
-        <div>
-          <div class="tool-demo-name">Nmap</div>
-          <div class="tool-demo-sub">Network Discovery & Port Scanning</div>
-        </div>
-        <div class="tool-demo-badge" style="color:#22c55e;border-color:rgba(34,197,94,.3);">RECON</div>
-      </div>
-      <div class="log-block" style="margin:16px 0;">
-        <div class="log-bar"><span style="font-size:.52rem;color:var(--txt2);letter-spacing:2px;">NMAP SCAN OUTPUT (SAMPLE)</span></div>
-        <pre class="log-code">$ nmap -sV -O -A 192.168.10.55
-
-PORT     STATE  SERVICE    VERSION
-22/tcp   open   ssh        OpenSSH 8.4
-80/tcp   open   http       Apache 2.4.41
-53/tcp   open   domain     (ANOMALY: DNS on endpoint!)
-3389/tcp open   ms-wbt-server Microsoft RDP
-
-OS: Windows 10 Pro (Build 19041)
-Script: dnscat2 service detected on port 53</pre>
-      </div>
-      <p class="tool-demo-desc">Used in network investigation to identify unusual open ports (DNS port 53 open on endpoint — not normal) and map attack surface during incident response.</p>
-    </div>
-
-    <div class="tool-demo-card fu">
-      <div class="tool-demo-header">
-        <div class="tool-demo-icon">🕷️</div>
-        <div>
-          <div class="tool-demo-name">Burp Suite</div>
-          <div class="tool-demo-sub">Web Application Security Testing</div>
-        </div>
-        <div class="tool-demo-badge" style="color:#f97316;border-color:rgba(249,115,22,.3);">WEB APP</div>
-      </div>
-      <div class="log-block" style="margin:16px 0;">
-        <div class="log-bar"><span style="font-size:.52rem;color:var(--txt2);letter-spacing:2px;">BURP SUITE — INTERCEPTED REQUEST</span></div>
-        <pre class="log-code">POST /login HTTP/1.1
-Host: target-app.local
-Content-Type: application/x-www-form-urlencoded
-
-username=admin'--&password=anypass
-// SQL Injection payload intercepted!
-
-[RESPONSE — 200 OK]
-{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."}
-// VULNERABILITY: SQLi authentication bypass confirmed</pre>
-      </div>
-      <p class="tool-demo-desc">Intercepted and modified HTTP requests to identify SQL injection vulnerability in a login form. Used Repeater module for manual testing and Intruder for automated payload delivery.</p>
-    </div>
-
-    <div class="tool-demo-card fu">
-      <div class="tool-demo-header">
-        <div class="tool-demo-icon">🔬</div>
-        <div>
-          <div class="tool-demo-name">VirusTotal</div>
-          <div class="tool-demo-sub">File & Domain Threat Intelligence</div>
-        </div>
-        <div class="tool-demo-badge" style="color:var(--p3);border-color:var(--border2);">THREAT INTEL</div>
-      </div>
-      <div class="log-block" style="margin:16px 0;">
-        <div class="log-bar"><span style="font-size:.52rem;color:var(--txt2);letter-spacing:2px;">VIRUSTOTAL ANALYSIS RESULT</span></div>
-        <pre class="log-code">File: svch0st.bat (MD5: a3f4b2e1c9d8...)
-Detection: 41/72 engines
-Category: Trojan.GenericKD / Dropper
-
-Domain: evil-c2.duckdns.org
-Malicious: 18/94 vendors
-Community: "Known C2 domain — dnscat2"
-ASN: AS6939 Hurricane Electric
-Last seen: 2026-04-20 (TODAY)</pre>
-      </div>
-      <p class="tool-demo-desc">Cross-referenced suspicious files and C2 domains against 90+ antivirus engines and threat intelligence feeds. Confirmed malware and validated IOCs for SIEM rule creation.</p>
-    </div>
-  </div>
-</section>
-
-<!-- MITRE ATT&CK MAPPING -->
-<section id="mitre" aria-label="MITRE ATT&CK Framework" style="background:var(--bg2);">
-  <div class="sh fu">
-    <div class="s-tag">Advanced Capability</div>
-    <h2 class="s-title">MITRE <span class="a">ATT&CK</span> Mapping</h2>
-  </div>
-  <p style="font-size:.94rem;color:var(--txt2);margin-bottom:40px;max-width:640px;line-height:1.8;font-weight:300;" class="fu">Mapping attacks to the MITRE ATT&CK framework separates junior analysts from serious candidates. Here's how investigations above map to the global threat taxonomy.</p>
-
-  <div class="mitre-full-grid fu">
-    <div class="mitre-tactic-col">
-      <div class="mitre-tactic-header">🎣 Initial Access</div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1566.001</div><div class="mitre-entry-body"><div class="mitre-entry-name">Spearphishing Attachment</div><div class="mitre-entry-case">↳ Phishing Investigation</div></div></div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1566.002</div><div class="mitre-entry-body"><div class="mitre-entry-name">Spearphishing Link</div><div class="mitre-entry-case">↳ Phishing Investigation</div></div></div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1078</div><div class="mitre-entry-body"><div class="mitre-entry-name">Valid Accounts</div><div class="mitre-entry-case">↳ Login Tracking (4624)</div></div></div>
-    </div>
-    <div class="mitre-tactic-col">
-      <div class="mitre-tactic-header">🔨 Credential Access</div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1110.001</div><div class="mitre-entry-body"><div class="mitre-entry-name">Password Guessing</div><div class="mitre-entry-case">↳ Brute Force (4625)</div></div></div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1110.003</div><div class="mitre-entry-body"><div class="mitre-entry-name">Password Spraying</div><div class="mitre-entry-case">↳ Brute Force (4625)</div></div></div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1550.002</div><div class="mitre-entry-body"><div class="mitre-entry-name">Pass the Hash</div><div class="mitre-entry-case">↳ Login Tracking (4624)</div></div></div>
-    </div>
-    <div class="mitre-tactic-col">
-      <div class="mitre-tactic-header">🦠 Execution</div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1204.002</div><div class="mitre-entry-body"><div class="mitre-entry-name">Malicious File</div><div class="mitre-entry-case">↳ Malware Detection</div></div></div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1059.001</div><div class="mitre-entry-body"><div class="mitre-entry-name">PowerShell</div><div class="mitre-entry-case">↳ Malware Detection</div></div></div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1021.001</div><div class="mitre-entry-body"><div class="mitre-entry-name">Remote Desktop Protocol</div><div class="mitre-entry-case">↳ Brute Force (4625)</div></div></div>
-    </div>
-    <div class="mitre-tactic-col">
-      <div class="mitre-tactic-header">📤 Exfiltration</div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1048.003</div><div class="mitre-entry-body"><div class="mitre-entry-name">Exfiltration Over DNS</div><div class="mitre-entry-case">↳ Suspicious Traffic</div></div></div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1572</div><div class="mitre-entry-body"><div class="mitre-entry-name">Protocol Tunneling</div><div class="mitre-entry-case">↳ Suspicious Traffic</div></div></div>
-      <div class="mitre-entry"><div class="mitre-entry-id">T1071.004</div><div class="mitre-entry-body"><div class="mitre-entry-name">DNS Application Layer</div><div class="mitre-entry-case">↳ Suspicious Traffic</div></div></div>
-    </div>
-  </div>
-
-  <div class="mitre-note fu">
-    <div class="mitre-note-icon">💡</div>
-    <p>MITRE ATT&CK is the globally accepted knowledge base of adversary tactics and techniques. Mapping incidents to ATT&CK IDs enables better threat intelligence sharing, detection rule writing, and reporting to management and stakeholders.</p>
-  </div>
-</section>
-
 <!-- CERTIFICATES & ACHIEVEMENTS -->
 <section id="achievements" aria-label="Certificates and Achievements">
   <div class="sh fu">
@@ -1725,7 +802,7 @@ Last seen: 2026-04-20 (TODAY)</pre>
   </div>
 
   <!-- ACHIEVEMENTS TIMELINE + STATS -->
-  <div class="ach-two-col">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;" class="ach-two-col">
     <div class="fu">
       <div class="ach-title">Key Milestones</div>
       <div class="timeline">
@@ -1769,7 +846,12 @@ Last seen: 2026-04-20 (TODAY)</pre>
     </div>
   </div>
 
-
+  <style>
+  @media(max-width:768px){
+    .ach-two-col{grid-template-columns:1fr!important;}
+    .stats-row{margin-top:0;}
+  }
+  </style>
 </section>
 
 <!-- YOUTUBE -->
@@ -1868,7 +950,7 @@ document.querySelectorAll('a,button,.sk-card,.srv-card,.soc-card,.yt-card,.feat-
 });
 
 /* TYPED TEXT */
-const roles=['Ethical Hacker','SOC L1 Analyst','Founder & CEO @ UnixDroid','Red Team Operator','Cybersecurity Analyst','SIEM & Log Analyst','Penetration Tester','Incident Responder','Digital Marketer','Web Developer','Threat Hunter'];
+const roles=['Ethical Hacker','Founder & CEO @ UnixDroid','Red Team Operator','Cybersecurity Analyst','Penetration Tester','Digital Marketer','Web Developer','Tech Content Creator'];
 let ri=0,ci=0,del=false;
 const tel=document.getElementById('typed');
 function tw(){
@@ -2173,15 +1255,6 @@ function closeBlog() {
   document.body.style.overflow = '';
 }
 document.addEventListener('keydown', e => { if(e.key === 'Escape') closeBlog(); });
-
-/* SOC CASE TABS */
-function showCase(id){
-  document.querySelectorAll('.case-panel').forEach(p=>p.style.display='none');
-  document.getElementById('case-'+id).style.display='block';
-  document.querySelectorAll('.soc-tab').forEach(t=>{
-    t.classList.toggle('active', t.dataset.case===id);
-  });
-}
 
 /* HAMBURGER MENU */
 const navToggle=document.getElementById('nav-toggle'),navList=document.querySelector('.na');
